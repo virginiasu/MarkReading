@@ -16,13 +16,15 @@
           - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
         -->
         <link href="popup.css" rel="stylesheet" type="text/css"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.min.js"></script>
         <script src="popup.js"></script>
     </head>
     
     <body>
         <h1>Mark Your Reading</h1>
         <div class="action_container">
-            <form>
+            <form id="form_marker">
                 <!--category-->
                 <div class="row_radio">
                     <input type="radio" id="catContinue" name="mr_category" value="catMore" class="radioGeneral" checked>
@@ -64,7 +66,8 @@
                     </div>
                     
                     <div class="container_innersubmit">
-                        
+                        <em class="error"></em>
+                        <input type="text" placeholder="New Label" id="newLabel"><a class="button action" id="addLabelTrigger">Add</a>
                     </div>
                 </div>
             </form>
