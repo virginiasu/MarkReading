@@ -12,9 +12,10 @@ body {
     font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
     font-size: 14px;
     margin: 0;
-    background: url("bg_markReading.png") no-repeat center top;
-    background-size:  cover;
+/*    background: url("bg_markReading.png") no-repeat center top;
+    background-size:  cover;*/
     width: 360px;
+    background: #000;
 }
 
 #status {
